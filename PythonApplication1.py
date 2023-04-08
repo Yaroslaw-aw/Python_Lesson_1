@@ -1,35 +1,17 @@
-#Задача 1. Напишите программу, которая принимает на вход цифру,
-# обозначающую день недели, и выводит название этого дня недели.
-#1 –> Понедельник
-#10 –> Нет такого дня
-#7 –> Воскресение
-
-
-n = int(input('Enter the number of day: '))
-if (n < 1 or n > 7):
-    print('There is no such day')
-
-if (n == 1):
-    print('Monday')
+#Задача 2. Напишите программу, которая принимает на вход
+#координаты двух точек и находит расстояние между ними в 2D пространстве.
+#A (3,6); B (2,1) -> 5,09
+#A (7,-5); B (1,-1) -> 7,21
         
-if (n == 2):
-    print('Tuesday')
-        
-if (n == 3):
-    print('Wednesday')
+import math
+
+
+x1 = int(input('Enter the x coordinate of A point: '))
+y1 = int(input('Enter the y coordinate of A point: '))
+x2 = int(input('Enter the x coordinate of B point: '))
+y2 = int(input('Enter the y coordinate of B point: '))
+
+r = math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+
+print(f'Distance between points A and B: ', round(r, 2))
     
-if (n == 4):
-    print('Thursday')
-        
-if (n == 5):
-    print('Friday')
-        
-if (n == 6):
-    print('Saturday')
-        
-if (n == 7):
-    print('Sunday')
-        
-   
-
-
