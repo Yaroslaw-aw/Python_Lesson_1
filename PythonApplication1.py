@@ -1,35 +1,20 @@
-#Çàäà÷à 1. Íàïèøèòå ïğîãğàììó, êîòîğàÿ ïğèíèìàåò íà âõîä öèôğó,
-# îáîçíà÷àşùóş äåíü íåäåëè, è âûâîäèò íàçâàíèå ıòîãî äíÿ íåäåëè.
-#1 –> Ïîíåäåëüíèê
-#10 –> Íåò òàêîãî äíÿ
-#7 –> Âîñêğåñåíèå
+# Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° 3. ĞĞ°Ğ¿Ğ¸ÑˆĞ¸Ñ‚Ğµ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñƒ, ĞºĞ¾Ñ‚Ğ¾Ñ€Ğ°Ñ Ğ¿Ğ¾ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ½Ğ¾Ğ¼Ñƒ Ğ½Ğ¾Ğ¼ĞµÑ€Ñƒ Ñ‡ĞµÑ‚Ğ²ĞµÑ€Ñ‚Ğ¸,
+# Ğ¿Ğ¾ĞºĞ°Ğ·Ñ‹Ğ²Ğ°ĞµÑ‚ Ğ´Ğ¸Ğ°Ğ¿Ğ°Ğ·Ğ¾Ğ½ Ğ²Ğ¾Ğ·Ğ¼Ğ¾Ğ¶Ğ½Ñ‹Ñ… ĞºĞ¾Ğ¾Ñ€Ğ´Ğ¸Ğ½Ğ°Ñ‚ Ñ‚Ğ¾Ñ‡ĞµĞº Ğ² ÑÑ‚Ğ¾Ğ¹ Ñ‡ĞµÑ‚Ğ²ĞµÑ€Ñ‚Ğ¸ (x Ğ¸ y).
+# 1 -> x > 0, y > 0
 
+quarterNumber = int(input('Enter the number of quarter (1 / 2 / 3 / 4)\n'))
 
-n = int(input('Enter the number of day: '))
-if (n < 1 or n > 7):
-    print('There is no such day')
+if (quarterNumber < 1 or 4 < quarterNumber):
+    print('Incorrect input')
 
-if (n == 1):
-    print('Monday')
-        
-if (n == 2):
-    print('Tuesday')
-        
-if (n == 3):
-    print('Wednesday')
-    
-if (n == 4):
-    print('Thursday')
-        
-if (n == 5):
-    print('Friday')
-        
-if (n == 6):
-    print('Saturday')
-        
-if (n == 7):
-    print('Sunday')
-        
-   
+if (quarterNumber == 1):
+    print('1 -> x > 0, y > 0')
 
+if (quarterNumber == 2):
+    print('2 -> x < 0, y > 0')
 
+if (quarterNumber == 3):
+    print('3 -> x < 0, y < 0')
+
+if (quarterNumber == 4):
+    print('4 -> x > 0, y < 0')
